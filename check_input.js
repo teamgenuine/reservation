@@ -46,7 +46,7 @@ function checkUtilities(projector, whiteboard, number_of_people) {
     switch(room) {
         case 'a':
             if (whiteboard) {
-                errorMessages.utilities = "This room does not provide Whiteboard";
+                errorMessages.utilities = "The available Room C does not provide Whiteboard";
                 return false;
             } else {
                 errorMessages.utilities = "";
@@ -54,7 +54,7 @@ function checkUtilities(projector, whiteboard, number_of_people) {
             }
         case 'b':
             if (projector) {
-                errorMessages.utilities = "This room does not provide Projector";
+                errorMessages.utilities = "The avaiable Room B does not provide Projector";
                 return false;
             } else {
                 errorMessages.utilities = "";
@@ -62,7 +62,7 @@ function checkUtilities(projector, whiteboard, number_of_people) {
             }
         case 'c':
             if (projector) {
-                errorMessages.utilities = "This room does not provide Projector";
+                errorMessages.utilities = "The avaiable Room C does not provide Projector";
                 return false;
             } else {
                 errorMessages.utilities = "";
