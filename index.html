@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Test</title>
+
+        <link type="text/css" rel="stylesheet" href="app.css">
+    </head>
+
+    <body>
+        <h1>Reservation</h1>
+
+        <div id='div_form'>
+            <div>
+                <label>Name</label>
+                <input type='text' id='name'>
+                <div id='errorName' class="errorMessage"></div>
+            </div>
+
+            <div>
+                <label>Number of People</label>
+                <input type='number' id='numberOfPeople'>
+                <div id='errorNumber' class="errorMessage"></div>
+            </div> 
+
+            <div>
+                <label>Duration</label>
+                <div>
+                    <!-- <input type='number' id='duration_hours' maxlength='1' min='0' max='2' value='0'> -->
+                    <select id='duration_hours'>
+                        <option value='0'>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                    </select>
+                    <label>Hr :</label>
+                    <!-- <input type='number' id='duration_minutes' maxlength='2' min='0' max='60' value='0' /required> -->
+                    <select id='duration_minutes'>
+                        <option value='0'>00</option>
+                        <option value='15'>15</option>
+                        <option value='30'>30</option>
+                        <option value='45'>45</option>
+                    </select>
+                    <label>Min</label>
+                </div>
+                <div id='errorDuration' class="errorMessage"></div>
+            </div>
+
+            <div id='div_projector'>
+                <label>Projector</label>
+                <select id='projector'>
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Whiteboard</label>
+                <select id='whiteboard'>
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                </select>
+            </div>
+
+            <div id='errorUtil' class='errorMessage'></div>
+            <button id='btnSubmit'>Submit</button>           
+        </div>
+
+        <div id='div_success'>
+        </div>
+        
+
+        <script src="check_input.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
